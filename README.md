@@ -24,14 +24,14 @@ Edges describe the connection between the surfaces. The edges contain informatio
 ### 3. Check if the feature graph is a subgraph of the workpiece graph and find any other matching subgraphs 
 
 -   Check if the given feature graph is actually a subgraph of the workpiece graph.
--	  Search for all possible matching subgraphs, that are similar to the given feature graph.
--	  Hint: To get similar subgraphs not all attributes of a node have to match.
+-   Search for all possible matching subgraphs, that are similar to the given feature graph.
+-   Hint: To get similar subgraphs not all attributes of a node have to match.
 -   Implement it in graph_search_task.py number 3)
--	  Commit your changes to your repository
+-   Commit your changes to your repository
 
 
 ### 4. Return the results
 
 -   Print the results in graph_search_task.py number 4)
 -   Commit your changes to your repository
--	  Send us the link to your repository with the results
+-   Send us the link to your repository with the results
