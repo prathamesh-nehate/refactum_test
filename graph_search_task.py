@@ -48,8 +48,23 @@ feature_graph = create_graph(feature_json)
 # 3) Check if the feature graph is a subgraph of the workpiece workpiece and find any other matching subgraphs
 # ##################################################
 
+def node_match(attrs1, attrs2):
+    return attrs1['type'] == attrs2['type'] and attrs1['cavity'] == attrs2['cavity']
 
-# TODO
+def edge_match(attrs1, attrs2):
+    return attrs1 == attrs2
+
+GM = isomorphism.GraphMatcher(
+    workpiece_graph, 
+    feature_graph,
+    node_match=node_match,
+    edge_match=edge_match   # or a custom partial match
+)
+
+is_subgraph = GM.subgraph_is_isomorphic()
+
+
+subgraph_mappings = list(GM.subgraph_isomorphisms_iter())
 
 # ##################################################
 # 4) Results
