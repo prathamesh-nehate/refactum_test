@@ -1,0 +1,103 @@
+{
+	"nodes": [
+		[
+			99,
+			{
+				"type": "plane",
+				"cavity": false,
+				"connected_faces": [
+					97,
+					101,
+					102,
+					103,
+					104,
+					105,
+					106,
+					107
+				],
+				"location": [
+					0.0,
+					-0.0,
+					-46.3
+				]
+			}
+		],
+		[
+			102,
+			{
+				"type": "cylinder",
+				"cavity": true,
+				"connected_faces": [
+					110,
+					99
+				],
+				"location": [
+					-20.5,
+					35.507,
+					-38.7
+				]
+			}
+		],
+		[
+			110,
+			{
+				"type": "cone",
+				"cavity": true,
+				"connected_faces": [
+					108,
+					102
+				],
+				"location": [
+					-20.5,
+					35.507,
+					-38.3
+				]
+			}
+		],
+		[
+			108,
+			{
+				"type": "plane",
+				"cavity": false,
+				"connected_faces": [
+					100,
+					110,
+					111,
+					112,
+					113,
+					114,
+					115,
+					116
+				],
+				"location": [
+					0.0,
+					-0.0,
+					-38.3
+				]
+			}
+		]
+	],
+	"edges": [
+		[
+			99,
+			102,
+			{
+				"angular_type": "CONVEX"
+			}
+		],
+		[
+			102,
+			110,
+			{
+				"angular_type": "CONVEX"
+			}
+		],
+		[
+			110,
+			108,
+			{
+				"angular_type": "CONVEX"
+			}
+		]
+	]
+}
