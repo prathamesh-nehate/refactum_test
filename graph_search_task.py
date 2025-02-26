@@ -72,4 +72,11 @@ subgraph_mappings = list(GM.subgraph_isomorphisms_iter())
 
 # Print results if matches are found. Return the number of matches and the node ids.
 
-# TODO
+if is_subgraph:
+    print("The feature graph is a subgraph of the workpiece graph.")
+    print(f"Number of matching subgraphs found: {len(subgraph_mappings)}")
+    print("Subgraph mappings (feature_node -> workpiece_node):")
+    for i, mapping in enumerate(subgraph_mappings, start=1):
+        print(f"Match #{i}: {list(mapping.keys())}")
+else:
+    print("The feature graph is not a subgraph of the workpiece graph.")
